@@ -1,5 +1,4 @@
 # GitLab Fail2Ban Filter
-[Source](https://gist.github.com/pawilon/238c278d3c6c4669771eb81b03264acd)
 
 ## Updated for GitLab 13
 
@@ -10,4 +9,10 @@
 yum install epel-release
 yum install fail2ban fail2ban-systemd
 ```
-+ Copy the contents of the repository folder to `/etc/fail2ban/`
++ Copy the contents of the repository to `/etc/fail2ban/`
++ Enable fail2ban at boot and start
+```
+systemctl enable --now fail2ban
+```
+
+[Source](https://gist.github.com/pawilon/238c278d3c6c4669771eb81b03264acd)
